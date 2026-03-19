@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>All About TheAwesomeKid</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="images/person-imitation-small.jpg" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Krishna Kaushik Panyala</title>
+	<link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+	<link rel="shortcut icon" href="images/person-imitation-small.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<header>
-		<a href="https://github.com/TheAwesomeKid02" target="_blank"><img src="images/github-logo.png"
-				alt="Follow me on GitHub" height="20px" style="border-radius: 50px;"></a>
-		<a href="https://replit.com/@TheAwesomeKid02" target="_blank"><img src="images/replit-logo.png"
-				alt="My replit account" height="20px" style="border-radius: 50px;"></a>
-		<img src="images/discord.png" alt="Discord Logo" height="20px" style="border-radius: 50px; border: none; ">
-		<p style="display: inline-block">theawesomekid</p>
-	</header>
-	<div class="txt" align="center">
-		<img src="images/person-imitation-small.jpg" alt="me" id="me">
-		<h1>Hello! I am TheAwesomeKid!</h1>
-		<h2>Here are facts about me.</h2>
-		<div align="left">
-			<ul class="other_txt">
-				<li>My go-to language for simple websites is HTML along with CSS and sometimes JavaScript. For backend
-					development, I mainly use node js, which I am still not perfect at 😥
-				<li>I am working on a huge project using Python 🧑‍💻</li>
-				<li>I am also learning Java 🍵</li>
-				<li>I am open to any suggestions for improvement!</li>
-			</ul>
-		</div>
-		<h2>Contact me via the links on top!</h2>
-		<br />
-		<br />
-		<a href="projects.html" class="alt_txt"><button class="new_pg_btn">
-				<p style="color: white;">My other projects</p>
-			</button></a>
-		<a href="discord.html" class="alt_txt"><button class="new_pg_btn">
-				<p style="color: white;">Discord Server</p>
-			</button></a>
-		<a href="facts-fib.html" class="alt_txt"><button class="new_pg_btn">
-				<p style="color: white;">Two Facts and a Fib</p>
-			</button></a><br /><br /><br /><br /><br />
-		<footer></footer>
+	<section class="hero">
+		<div class="overlay"></div>
+		<img src="images/KKP.JPG" class="hero-img" alt="Krishna Kaushik Panyala">
+
+		<h1 id="big-name">Krishna Kaushik Panyala</h1>
+	</section>
+
+	<section class="content">
+		<div class="tab active" data-target="about">About Me</div>
+		<div class="tab" data-target="projects">Projects</div>
+		<div class="tab" data-target="portfolio">Maker's Portfolio</div>
+		<div class="tab" data-target="contact">Contact</div>
+	</section>
+
+	<section id="about" class="tab-content active">about</section>
+	<section id="projects" class="tab-content">projects</section>
+	<section id="portfolio" class="tab-content">portfolio</section>
+	<section id="contact" class="tab-content">contact</section>
+
+	<script src="script.js"></script>
 </body>
 </html>
