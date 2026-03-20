@@ -4,6 +4,27 @@ const overlay = document.querySelector(".overlay");
 const tabs = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
 
+const big = document.getElementById("big-name");
+
+const imgW = document.getElementById('kkp').clientWidth;
+const imgH = document.getElementById('kkp').clientHeight;
+
+const angle = Math.atan(imgH/imgW) * (180 / Math.PI)
+
+document.addEventListener('DOMContentLoaded', () => {
+	const textRect = big.getBoundingClientRect();
+
+    const imgCenterX = imgW / 2;
+    const imgCenterY = imgH / 2;
+
+    const textCenterX = textRect.width / 2;
+    const textCenterY = textRect.height / 2;
+	big.style = `transform: translateY(-50%) rotate(-${angle}deg);`;
+	big.style.left = `${imgCenterX - textCenterX}px`;
+    big.style.top = `${imgCenterY - textCenterY}px`;
+});
+
+
 window.addEventListener("scroll", () => {
 	const scrollY = window.scrollY;
 	const maxScroll = window.innerHeight;

@@ -35,13 +35,22 @@ body {
 	transition: opacity 0.2s ease-out;
 }
 
-#big-name {
+.name-wrapper {
 	position: absolute;
 	bottom: 15%;
-	left: 50%;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	inset: 0;
+}
+
+#big-name {
+	position: absolute;
+	opacity: 75%;
+	display: inline-block;
 	transform: translateX(-50%);
-	font-size: 10rem;
-	font-weight: 700;
+	font-size: 5vw;
+	font-weight: 100;
 	white-space: nowrap;
 	background: linear-gradient(90deg, white 0%, white 100%);
 	background-repeat: no-repeat;
@@ -49,7 +58,7 @@ body {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
-	font-family: 'Aguafina Script';
+	font-family: 'WindSong'; /*Alex Brush*/
 	animation: write 5s ease both;
 }
 
@@ -94,4 +103,57 @@ body {
 .tab-content.active {
 	display: block;
 	transition: 0.3s;
+}
+
+.icon {
+	stroke: #dadada;
+}
+
+#projects.tab-content.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left_text {
+	text-align: left;
+	border: 2px solid #dadada;
+	padding: 5px 10px;
+	width: 95%;
+	height: 7vh;
+	border-radius: 10px;
+	margin-bottom: 3rem;
+	transition-duration: .3s;
+	box-shadow: -5px 5px 20px #dadada;
+	text-shadow: 0 0 10px #dadada;
+}
+
+.right_text {
+	text-align: right;
+	border: 2px solid #dadada;
+	padding: 5px 10px;
+	width: 95%;
+	height: 7vh;
+	border-radius: 10px;
+	margin-bottom: 3rem;
+	transition-duration: .3s;
+	box-shadow: 5px 5px 20px #dadada;
+	text-shadow: 1px 1px 10px #dadada;
+}
+
+.right_text:hover, .left_text:hover {
+	border: 2px solid #9fbdc1;
+}
+
+.right_text:hover {
+	box-shadow: 5px 5px 20px #9fbdc1;
+}
+
+
+.left_text:hover {
+	box-shadow: -5px 5px 20px #9fbdc1;
+}
+
+a {
+	color: #888;
 }
