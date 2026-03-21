@@ -127,7 +127,7 @@ body {
 	text-align: left;
 	border: 2px solid #dadada;
 	padding: 5px 10px;
-	width: 95%;
+	width: 100%;
 	height: 7vh;
 	border-radius: 10px;
 	margin-bottom: 3rem;
@@ -201,4 +201,28 @@ a {
 	list-style: circle;
 	padding-left: 1.5rem;
 	margin-top: 0.5rem;
+}
+
+#projects img {
+	display: inline;
+	width: 40%;
+	margin: 3%;
+}
+
+#projects section {
+	margin-bottom: 3vh;
+}
+
+#projects section section {
+	border: 2px solid #dadada;
+	border-radius: 10px;
+	width: 50vw;
+	box-shadow: -5px 5px 20px #dadada;
+	text-shadow: -1px 1px 10px #dadada;
+	transition: .3s;
+}
+
+#projects section section:hover {
+	border: 2px solid #9fbdc1;
+	box-shadow: -5px 5px 20px #9fbdc1;
 }
