@@ -1,3 +1,7 @@
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 const heroImg = document.querySelector(".hero-img");
 const overlay = document.querySelector(".overlay");
 
@@ -11,7 +15,7 @@ const imgH = document.getElementById('kkp').clientHeight;
 
 const angle = Math.atan(imgH/imgW) * (180 / Math.PI)
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', e => {
 	const textRect = big.getBoundingClientRect();
 
     const imgCenterX = imgW / 2;
@@ -47,3 +51,7 @@ tabs.forEach(tab => {
 		target.classList.add('active');
 	});
 });
+
+function scrollToTabs(event) {
+	document.querySelector('.content').scrollIntoView({ behavior: 'smooth' });
+}
