@@ -212,6 +212,7 @@ a {
 #projects img {
 	display: inline;
 	width: 40%;
+	aspect-ratio: 16 / 9;
 	margin: 3%;
 }
 
