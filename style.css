@@ -8,6 +8,7 @@ body {
 	background: #000;
 	color: #fff;
 	font-family: 'Changa';
+	font-size: 1.15rem;
 }
 
 .hero {
@@ -181,11 +182,16 @@ a {
 	font-family: 'Changa';
 	font-weight: bolder;
 	cursor: pointer;
+	transition: .2s;
+}
+
+#tab-btn:hover {
+	border-bottom: 2px solid #9fbdc1;
+	color: #9fbdc1
 }
 
 #about {
 	text-align: center;
-	font-size: 1.15rem;
 }
 
 #about ul {
@@ -225,4 +231,21 @@ a {
 #projects section section:hover {
 	border: 2px solid #9fbdc1;
 	box-shadow: -5px 5px 20px #9fbdc1;
+}
+
+#achievements.tab-content.active {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#achievements section {
+	margin-bottom: 3vh;
+	border: 2px solid #dadada;
+	border-radius: 10px;
+	width: 50vw;
+	box-shadow: -5px 5px 20px #dadada;
+	text-shadow: -1px 1px 10px #dadada;
+	transition: .3s;
 }
